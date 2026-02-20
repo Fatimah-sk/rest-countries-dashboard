@@ -3,7 +3,6 @@ import { resolve } from "path";
 
 export default defineConfig({
 base: "/rest-countries-dashboard/",
-
   build: {
     rollupOptions: {
       input: {
