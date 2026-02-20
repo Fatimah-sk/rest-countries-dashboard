@@ -2,7 +2,7 @@ import { defineConfig } from "vite";
 import { resolve } from "path";
 
 export default defineConfig({
-base: "/rest-countries-dashboard/",
+  base: "/rest-countries-dashboard/",
   build: {
     rollupOptions: {
       input: {
