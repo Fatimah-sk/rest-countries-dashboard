@@ -63,4 +63,25 @@ grid.addEventListener("click", (e) => {
 window.location.href = `details.html?code=${code}`;
 });
 
+
+
+const scrollBtn = document.getElementById("scrollTopBtn");
+
+// Vis knapp når man scroller ned
+window.addEventListener("scroll", () => {
+  if (window.scrollY > 150) {
+    scrollBtn.classList.add("show");
+  } else {
+    scrollBtn.classList.remove("show");
+  }
+});
+
+// Scroll til toppen
+scrollBtn.addEventListener("click", () => {
+  window.scrollTo({
+    top: 0,
+    behavior: "smooth",
+  });
+});
+
 init();
